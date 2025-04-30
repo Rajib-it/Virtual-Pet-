@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/health_background">
+
+    <TextView
+        android:id="@+id/healthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Health Status"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+
+    <ImageView
+        android:id="@+id/petHealthImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/healthy_pet"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/healthStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your pet is happy and healthy!"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/healthBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="80"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feed Pet"
+        android:onClick="feedPet"/>
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play with Pet"
+        android:onClick="playWithPet"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
